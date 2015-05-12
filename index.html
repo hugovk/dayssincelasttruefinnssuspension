@@ -59,12 +59,12 @@
             $('#counter').html(counter);
             $('#info').html(info);
             $('#date').html(date_format);
-            $(".reason-container").css({"bottom": "0"});
-            $('#reason-container').textfill({ maxFontPixels: 0 });
+            $(".counter-container").css({"bottom": "0"});
+            $('#counter-container').textfill({ maxFontPixels: 0 });
         });
 
         $(window).resize(function() {
-          $('#reason-container').textfill( {maxFontPixels: 0} );
+          $('#counter-container').textfill( {maxFontPixels: 0} );
         });
         -->
     </script>
@@ -102,7 +102,7 @@
                 2px 2px 0 white;
         }
 
-        #reason-container {
+        #counter-container {
           padding: 5px;
           position: absolute;
           top: 48px;
@@ -163,7 +163,7 @@
         <div id="intro" class="intro"></div>
     </H2>
     <H1>
-        <div id="reason-container"><span id="counter" class="counter"></span></div>
+        <div id="counter-container"><span id="counter" class="counter"></span></div>
     </H1>
 
 </div>
