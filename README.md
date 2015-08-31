@@ -1,6 +1,6 @@
 # Days since last True Finns suspension
 
-[Find out here!](https://hugovk.github.io/dayssincelasttruefinnssuspension/)
+[**Find out here!**](https://hugovk.github.io/dayssincelasttruefinnssuspension/)
 
 Has another True Finn been suspended? Here's how to update the counter.
 
