@@ -16,58 +16,10 @@
         var last_suspension_date = new Date("23 October 2015");
         var last_suspension_url = "http://yle.fi/uutiset/finns_party_expels_vice_chair_tynkkynen_soini_denies_witch_hunt/8407678"
 
-        function getURLParameter(name) {
-            return decodeURI(
-                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-            );
-        }
-
-        if (getURLParameter("date") !== "null") {
-            var today = new Date(getURLParameter("date"));
-        } else {
-            var today = new Date();
-        }
-
         var intro = 'Days since last True Finns suspension';
-
-        diff = Math.abs(today-last_suspension_date); // milliseconds
-        var counter = Math.floor(diff / (1000 * 60 * 60 * 24)); // whole days
-
-        // Format like 4th June 2014
-        var dd = last_suspension_date.getDate();
-        var mm = last_suspension_date.getMonth() + 1; // January is 0!
-        var yyyy = last_suspension_date.getFullYear();
-        var m_names = ["January", "February", "March",
-                "April", "May", "June", "July", "August", "September",
-                "October", "November", "December"];
-        var suffix = "";
-        if (dd === 1 || dd === 21 || dd === 31) {
-            suffix = "st";
-        } else if (dd === 2 || dd === 22) {
-            suffix = "nd";
-        } else if (dd === 3 || dd === 23) {
-            suffix = "rd";
-        } else {
-            suffix = "th";
-        }
-        var date_format = dd + "" + suffix + " " + m_names[mm - 1] + " " + yyyy;
-
-        var info = "<P>Last suspension: " + date_format + "<br><a href=" + last_suspension_url + ">More info</a>";
-
-        $(document).ready(function() {
-            $('#intro').html(intro);
-            $('#counter').html(counter);
-            $('#info').html(info);
-            $('#date').html(date_format);
-            $(".counter-container").css({"bottom": "0"});
-            $('#counter-container').textfill({ maxFontPixels: 0 });
-        });
-
-        $(window).resize(function() {
-          $('#counter-container').textfill( {maxFontPixels: 0} );
-        });
         -->
     </script>
+    <script src="dayssince.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
