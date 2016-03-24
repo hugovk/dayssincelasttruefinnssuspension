@@ -4,19 +4,17 @@
 
 Has another True Finn been suspended? Here's how to update the counter.
 
-1. [Click here to edit index.html](https://github.com/hugovk/dayssincelasttruefinnssuspension/edit/gh-pages/index.html)
+1. [Click here to edit data.js](https://github.com/hugovk/dayssincelastukipsuspension/edit/gh-pages/data.js)
 
-2. Scroll to find two lines like this:
+2. Change the date and URL and click "Propose file change":
+  ```javascript
+var last_suspension_date = new Date("23 October 2015");
+var last_suspension_url = "http://yle.fi/uutiset/finns_party_expels_vice_chair_tynkkynen_soini_denies_witch_hunt/8407678";
   ```
-  var last_suspension_date = new Date("1 December 2014");
-  var last_suspension_url = "http://yle.fi/uutiset/perussuomalaisista_erotettu_perustamassa_oman_ryhman_janakkalan_valtuustoon/7827839"
-  ```
 
-3. Change the date and URL and click "Propose file change"
+3. Click "Create pull request" once, and a second time
 
-4. Click "Create pull request" once, and a second time
-
-5. Done!
+4. Done!
 
 Or:
 
