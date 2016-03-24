@@ -61,10 +61,9 @@ html, body {
 }
 
 /* Ribbon */
-.github-fork-ribbon {
+.github-fork-ribbon:before {
   background-color: #FDDB50;
 }
-.github-fork-ribbon a,
-.github-fork-ribbon a:hover {
+.github-fork-ribbon:after {
   color: #15569C;
 }
