@@ -1,69 +1,9 @@
-.intro, .counter, .info {
-  font-family: sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
 body,
-.info a {
+a {
   background-color: #15569C;
   color: #FDDB50;
-}
-
-.intro {
-  padding-top: 5px;
-}
-
-.outline {
-  text-shadow:
-  -2px -2px 0 white,
-  2px -2px 0 white,
-  -2px 2px 0 white,
-  2px 2px 0 white;
-}
-
-#counter-container {
-  padding: 5px;
-  position: absolute;
-  top: 48px;
-  bottom: 60px;
-  left: 0;
-  right: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 50px;
   text-align: center;
-}
-
-/* Sticky footer */
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -60px;
-}
-
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-
-.site-footer, .page-wrap:after {
-  /* .push must be the same height as footer */
-  height: 60px;
-}
-
-.site-footer {
-}
-
-/* Ribbon */
-.github-fork-ribbon:before {
-  background-color: #FDDB50;
-}
-.github-fork-ribbon:after {
-  color: #15569C;
 }
